@@ -12,6 +12,14 @@ class ItemsViewController: UITableViewController {
     
     var itemStore: ItemStore!
     
+    @IBAction func addNewItem(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func toggleEditingMode(sender: AnyObject) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
