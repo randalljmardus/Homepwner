@@ -14,6 +14,7 @@
 		1515E0721CD291C7000B5AC1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E0711CD291C7000B5AC1 /* Item.swift */; };
 		1515E0741CD29542000B5AC1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E0731CD29542000B5AC1 /* ItemStore.swift */; };
 		1515E0761CD29668000B5AC1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E0751CD29668000B5AC1 /* ItemsViewController.swift */; };
+		1546CDE41CD91BBE004076D3 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1546CDE31CD91BBE004076D3 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1515E0711CD291C7000B5AC1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 		1515E0731CD29542000B5AC1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemStore.swift; path = ../ItemStore.swift; sourceTree = "<group>"; };
 		1515E0751CD29668000B5AC1 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		1546CDE31CD91BBE004076D3 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1515E05F1CD28E3C000B5AC1 /* AppDelegate.swift */,
 				1515E0631CD28E3C000B5AC1 /* Main.storyboard */,
 				1515E0751CD29668000B5AC1 /* ItemsViewController.swift */,
+				1546CDE31CD91BBE004076D3 /* ItemCell.swift */,
 				1515E0661CD28E3C000B5AC1 /* Assets.xcassets */,
 				1515E0681CD28E3C000B5AC1 /* LaunchScreen.storyboard */,
 				1515E06B1CD28E3C000B5AC1 /* Info.plist */,
@@ -145,6 +148,7 @@
 				1515E0761CD29668000B5AC1 /* ItemsViewController.swift in Sources */,
 				1515E0601CD28E3C000B5AC1 /* AppDelegate.swift in Sources */,
 				1515E0741CD29542000B5AC1 /* ItemStore.swift in Sources */,
+				1546CDE41CD91BBE004076D3 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +298,7 @@
 				1515E0701CD28E3C000B5AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
