@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="hFP-Tr-QQ5">
             <objects>
-                <viewController id="qVL-rP-3KK" sceneMemberID="viewController">
+                <viewController id="qVL-rP-3KK" customClass="DetailViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="huy-vN-GKQ"/>
                         <viewControllerLayoutGuide type="bottom" id="B9F-TK-cvQ"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-EC-ANh">
-                                <rect key="frame" x="20" y="20" width="560" height="564"/>
+                                <rect key="frame" x="20" y="20" width="560" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tls-XY-bDR">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -69,8 +69,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mg-HD-DPs" userLabel="Date Created">
-                                        <rect key="frame" x="0.0" y="114" width="560" height="450"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" misplaced="YES" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mg-HD-DPs" userLabel="Date Created">
+                                        <rect key="frame" x="0.0" y="114" width="560" height="406"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -96,6 +96,12 @@
                             <constraint firstAttribute="leadingMargin" secondItem="Qfg-EC-ANh" secondAttribute="leading" id="oSY-yt-Awn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="9mg-HD-DPs" id="cOb-iQ-RuO"/>
+                        <outlet property="nameField" destination="m6W-wZ-yRi" id="nmK-W3-2yk"/>
+                        <outlet property="serialNumberField" destination="DYd-md-jy1" id="mkH-lD-stg"/>
+                        <outlet property="valueField" destination="mI3-CJ-EE3" id="Q36-Dw-MtS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lr8-hd-S26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
