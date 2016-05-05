@@ -43,6 +43,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
     
+    var imageStore: ImageStore!
+    
     let numberFormatter: NSNumberFormatter = {
         let formatter = NSNumberFormatter()
         formatter.numberStyle = .DecimalStyle
@@ -65,6 +67,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         serialNumberField.text = item.serialNumber
         valueField.text = numberFormatter.stringFromNumber(item.valueInDollars)
         dateLabel.text = dateFormatter.stringFromDate(item.dateCreated)
+        
+        //get the item key
+        let key = item.itemKey
+        
+        //if there is an associated image with the item
+        //display it on the image view
+        let imageToDisplay = imageStore.imageForKey(key)
+        imageView.image = imageToDisplay
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -95,6 +105,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         
         //get picked image from info dictionary
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        //Store the image in the ImageStore for the item's key
+        imageStore.setImage(image, forKey: item.itemKey)
         
         //put that image on the screen in the image view
         imageView.image = image

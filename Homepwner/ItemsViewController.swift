@@ -11,6 +11,7 @@ import UIKit
 class ItemsViewController: UITableViewController {
     
     var itemStore: ItemStore!
+    var imageStore: ImageStore!
     
     @IBAction func addNewItem(sender: AnyObject) {
         //create a new item and add it to the store
@@ -74,6 +75,9 @@ class ItemsViewController: UITableViewController {
             
             //remove the item from the store
             self.itemStore.removeItem(item)
+                
+            //remove the item's image form the image store
+            self.imageStore.deleteImageForKey(item.itemKey)
             
             //also remove that row from the table view with an animation
             self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
@@ -102,6 +106,7 @@ class ItemsViewController: UITableViewController {
                 let item = itemStore.allItems[row]
                 let detailViewController = segue.destinationViewController as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
         }
     }
