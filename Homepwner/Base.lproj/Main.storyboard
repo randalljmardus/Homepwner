@@ -125,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="1138" y="-6"/>
         </scene>
-        <!--Items View Controller-->
+        <!--Homepwner-->
         <scene sceneID="G9E-2s-AM4">
             <objects>
                 <tableViewController id="6Hc-JP-vNz" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
@@ -228,7 +228,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="8AE-3o-4rJ"/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="8AE-3o-4rJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfX-8K-jUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
