@@ -85,11 +85,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="5vJ-og-QSj" firstAttribute="leading" secondItem="WxY-2q-KNv" secondAttribute="leading" id="3va-Er-FcB"/>
                                     <constraint firstItem="VLM-9y-F6K" firstAttribute="leading" secondItem="5vJ-og-QSj" secondAttribute="leading" id="Ffj-1D-tKE"/>
                                     <constraint firstItem="WxY-2q-KNv" firstAttribute="leading" secondItem="9mg-HD-DPs" secondAttribute="leading" id="dUm-Tz-gqD"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9gi-Mm-hbI" appends="YES" id="Mem-dt-PQT"/>
+                                </connections>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,6 +117,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lr8-hd-S26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9gi-Mm-hbI">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="qVL-rP-3KK" id="AWs-3F-YW4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1138" y="-6"/>
         </scene>
