@@ -128,7 +128,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact" axis="horizontal" distribution="fillEqually"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
